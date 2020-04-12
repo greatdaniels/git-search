@@ -1,0 +1,56 @@
+<div class="container-fluid">
+
+    <!-- progress loader goes here -->
+
+    <div class="overlay">
+
+        <!-- search nesting goes here -->
+
+        <div class="content">
+
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="image">
+                        <div class="card-img-top">
+                            <img src="{{ user.avatar_url }}">
+                        </div>
+                        <div class="card-body">
+                            <!-- username with icon and github button link  -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="title">Username : <span class="name"> {{ user.login }}</span></h4><br>
+                            <p> Repositories : <span class="repo-num"> {{ user.public_repos }}</span></p><br>
+                            <p> Joined : <span class="joined"> {{ user.created_at }} </span> </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="repositories">
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-title">
+                        <h3><span class="headers">Repository Name:</span> {{ repo.name }} </h3>
+                    </div>
+                    <hr>
+                    <div class="card-text">
+                        <div class="description"><span class="headers">Description :</span> {{ repo.description }} </div>
+                        <div class="card-subtitle"><span class="headers">Language :</span> {{ repo.language }} </div>
+                        <div class="card-subtitle"><span class="headers">Joined :</span> {{ repo.created_at }} </div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-sm btn-outline-success">View</button>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
