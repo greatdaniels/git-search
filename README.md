@@ -8,8 +8,12 @@
 
 This is an angular app that allows the user to search a github username and view the individual's avatar, username, and a list of public repositories.
 
-## Live link
+## Screenshot
 
+<img src= "https://raw.githubusercontent.com/greatdaniels/git-search/master/src/assets/Screenshot from 2020-04-13 22-24-31.png" width="700px" height="400px">
+
+## Live link
+https://greatdaniels.github.io/git-search/
 
 ## BDD ##
 | Behavior                  | Input                     | Output                    |
@@ -20,9 +24,9 @@ This is an angular app that allows the user to search a github username and view
 
 * Open terminal { Ctrl+Alt+T }
 
-* git clone 
+* git clone ```https://github.com/greatdaniels/git-search.git```
 
-* cd quoteApplication
+* cd git-search
 
 * code . to open it in Visual Studio Code.
 
@@ -34,6 +38,9 @@ This is an angular app that allows the user to search a github username and view
 * Bootstrap 
 * Typescript
 * Generated with [Angular CLI](https://github.com/angular/angular-cli)
+
+## Known Bugs
+* No known bug now but pull requests are encouraged
 
 ## License
 [MIT LICENSE](license.txt)
