@@ -3,21 +3,21 @@
     <!-- search form goes here -->
     <app-search (searchResult) = "searchRepo($event)"></app-search>
 
-    <div class="repositories">
-        <div class="card" *ngFor='let repository of repo' style="width: 24rem;">
+    <div class="container repositories">
+        <div class="card" id="repo" *ngFor="let repository of repo" style="width: 22rem;">
             <div class="card-body">
                 <div class="card-title">
-                    <h5><span class="headers">Name:</span> {{ repository.name }} </h5>
+                    <h5><span class="repo-name">Name:</span> {{ repository.name }} </h5>
                 </div>
                 <hr>
                 <div class="card-text">
-                    <div class="description"><span class="headers">Description :</span> {{ repository.description }} </div>
-                    <div class="card-subtitle"><span class="headers">Language :</span> {{ repository.language }} </div>
-                    <div class="card-subtitle"><span class="headers">Joined :</span> {{ repository.created_at }} </div>
+                    <div class="description"><span class="headers">Description :</span> {{ repository.description }} </div><br>
+                    <div class="card-subtitle"><span class="headers">Language :</span> {{ repository.language }} </div><br>
+                    <div class="card-subtitle"><span class="headers">Joined :</span> {{ repository.created_at | dateCount }} </div>
                 </div>
             </div>
             <div class="card-footer">
-                <button class="btn btn-sm btn-outline-success" id="button-link"><a href="{{repository.html_url}}" class="link">View</a></button>
+                <button class="btn btn-outline-primary" id="button-link"><a href="{{repository.html_url}}" class="link">View Repo</a></button>
             </div>
         </div>
     </div>
