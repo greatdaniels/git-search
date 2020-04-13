@@ -13,11 +13,11 @@ export class UserComponent implements OnInit {
   user: User;
   repo: Repo;
 
-  constructor(public userService: ServiceService, private repoService: ServiceService) { }
+  constructor(public userService: ServiceService, public repoService: ServiceService) { }
 
   search(search) {
     this.userService.getUser(search).then(
-      result => {
+      success => {
         this.user = this.userService.users;
       },
       error => {
@@ -28,9 +28,10 @@ export class UserComponent implements OnInit {
     this.repoService.getRepos(search).then(
       result => {
         this.repo = this.repoService.repos;
+        console.log(this.repo);
       },
       error => {
-        console.log('error');
+        console.log(error);
       }
     )
   }

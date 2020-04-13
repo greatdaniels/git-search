@@ -54,9 +54,9 @@ export class ServiceService {
     }
 
     return new Promise((resolve, reject)=> {
-      this.http.get<Repos>('https://api.github.com/users/'+search+'repos?order=created&sort=asc?access_token='+environment.apikey).toPromise().then(
-        result => {
-          this.repos = result;
+      this.http.get<Repos>('https://api.github.com/users/'+search+"/repos?order=created&sort=asc?access_token="+environment.apikey).toPromise().then(
+        results => {
+          this.repos = results;
           resolve();
         },
         error => {

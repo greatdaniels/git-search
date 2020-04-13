@@ -1,3 +1,5 @@
+import { Repo } from './../repo';
+import { ServiceService } from './../service/service.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +9,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RepoComponent implements OnInit {
 
-  constructor() { }
+  repo: Repo;
 
-  ngOnInit(): void {
+  constructor(public repoService:ServiceService) { }
+
+  searchRepo(search) {
+    this.repoService.getRepos(search).then(
+      (results)=>{
+        this.repo = this.repoService.repos
+      },
+      (error)=>{
+        console.log(error)
+      }
+    )
+  }
+
+  ngOnInit() {
+    this.searchRepo('greatdaniels');
   }
 
 }
