@@ -1,27 +1,39 @@
 # GitSearch
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.6.
+## Author
 
-## Development server
+[Dan_Njoroge](https://github.com/greatdaniels)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Description
 
-## Code scaffolding
+This is an angular app that allows the user to search a github username and view the individual's avatar, username, and a list of public repositories.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Live link
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## BDD ##
+| Behavior                  | Input                     | Output                    |
+| ------------------------- | ------------------------- | ------------------------- |
+| Search for a github profile |Enter the Github username  | Displays the username, number of repositories,Joining date, and lists the repositories |
 
-## Running unit tests
+## Installation / Setup Instruction
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+* Open terminal { Ctrl+Alt+T }
 
-## Running end-to-end tests
+* git clone 
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+* cd quoteApplication
 
-## Further help
+* code . to open it in Visual Studio Code.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Technologies used
+
+* Angular CLI
+* HTML 
+* CSS
+* Bootstrap 
+* Typescript
+* Generated with [Angular CLI](https://github.com/angular/angular-cli)
+
+## License
+[MIT LICENSE](license.txt)
