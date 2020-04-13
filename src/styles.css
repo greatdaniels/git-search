@@ -1,10 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 
 @import "~bootstrap/dist/css/bootstrap.css";
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css2?family=Amaranth&display=swap");
 
 body{
-    background-image: url("./assets/five-bulb-lights-1036936.jpg");
+    background-image: url("./assets/abstract-antique-backdrop-background-164005.jpg");
     font-family: 'Amaranth', sans-serif;
     background-size: cover;
     background-repeat: no-repeat;
