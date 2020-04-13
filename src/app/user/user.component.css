@@ -2,6 +2,8 @@
     background-color: rgba(231,253,253,0.2);
     margin-top: 1%;
     margin-bottom: 1%;
+    margin-left: 4%;
+    margin-right: 4%;
 }
 
 img{
@@ -47,4 +49,10 @@ a{
 #repositories{
     color: whitesmoke;
     margin-bottom: 3%;
+}
+
+footer{
+    color: whitesmoke;
+    text-align: center;
+    font-weight: bolder;
 }

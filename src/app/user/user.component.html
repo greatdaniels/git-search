@@ -25,7 +25,7 @@
                 <div class="col-sm-6">
                     <div class="card" id="info">
                         <div class="card-body">
-                            <h4 class="title">Username : <span class="name"> {{ user.login }}</span></h4><hr>
+                            <h4 appStrikethrough class="title">Username : <span class="name"> {{ user.login }}</span></h4><hr>
                             <p><i class="fa fa-file-o" style="font-size:18px"></i> Repositories : <span class="repo-num"> {{ user.public_repos }}</span></p><br>
                             <p><i class="fa fa-clock-o" style="font-size:18px"></i> Joined : <span class="joined"> {{ user.created_at | dateCount }} </span> </p>
                         </div>
@@ -60,3 +60,7 @@
         
     </div>
 </div>
+
+<footer>
+    <p>GIT-SEARCH<BR>2020</p>
+</footer>

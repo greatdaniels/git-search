@@ -1,0 +1,40 @@
+.overlay{
+    background-color: rgba(231,253,253,0.2);
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+#button-link{
+    border-radius: 50px;
+}
+
+.headers{
+    font-weight: bold;
+}
+
+.repositories{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#repositories{
+    color: whitesmoke;
+    margin-bottom: 3%;
+    
+}
+
+#repo{
+    background-color: rgba(255,255,255,0.8);
+    margin-bottom: 2%;
+    border-radius: 4px;
+    margin-top: 3%;
+}
+
+footer{
+    color: whitesmoke;
+    text-align: center;
+    font-weight: bolder;
+}

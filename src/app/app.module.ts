@@ -11,6 +11,7 @@ import { RepoComponent } from './repo/repo.component';
 import { SearchComponent } from './search/search.component';
 import { DateCountPipe } from './date-count.pipe';
 import { NavbarComponent } from './navbar/navbar.component';
+import { StrikethroughDirective } from './strikethrough.directive';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     RepoComponent,
     SearchComponent,
     DateCountPipe,
-    NavbarComponent
+    NavbarComponent,
+    StrikethroughDirective
   ],
   imports: [
     BrowserModule,
