@@ -1,3 +1,6 @@
+import { ServiceService } from './../service/service.service';
+import { Repo } from './../repo';
+import { User } from './../user';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +10,33 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserComponent implements OnInit {
 
-  constructor() { }
+  user: User;
+  repo: Repo;
 
-  ngOnInit(): void {
+  constructor(public userService: ServiceService, private repoService: ServiceService) { }
+
+  search(search) {
+    this.userService.getUser(search).then(
+      result => {
+        this.user = this.userService.users;
+      },
+      error => {
+        console.log(error)
+      }
+    );
+
+    this.repoService.getRepos(search).then(
+      result => {
+        this.repo = this.repoService.repos;
+      },
+      error => {
+        console.log('error');
+      }
+    )
+  }
+
+  ngOnInit() {
+    this.search('greatdaniels');
   }
 
 }
