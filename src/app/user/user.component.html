@@ -8,10 +8,10 @@
         <!-- search nesting goes here -->
         <app-search (searchResult) = "search($event)"></app-search> <br>
 
-        <div class="content">
+        <div class="container content">
 
             <div class="row">
-                <div class="col-sm-4">
+                <div class="col-sm-4" id="img">
                     <div class="image">
                         <div class="card-img-top">
                             <img src="{{ user.avatar_url }}">
@@ -22,7 +22,7 @@
                     </div>
                 </div>
 
-                <div class="col-sm-5">
+                <div class="col-sm-7">
                     <div class="card">
                         <div class="card-body">
                             <h4 class="title">Username : <span class="name"> {{ user.login }}</span></h4><br>
@@ -39,17 +39,17 @@
             <h2>Repositories</h2>
         </div>
 
-        <div class="repositories">
+        <div class="container repositories">
             <div class="card" *ngFor="let repository of repo" style="width: 24rem;">
                 <div class="card-body">
                     <div class="card-title">
-                        <h3><span class="headers">Repository Name:</span> {{ repo.name }} </h3>
+                        <h3><span class="headers">Name:</span> {{ repository.name }} </h3>
                     </div>
                     <hr>
                     <div class="card-text">
-                        <div class="description"><span class="headers">Description :</span> {{ repo.description }} </div>
-                        <div class="card-subtitle"><span class="headers">Language :</span> {{ repo.language }} </div>
-                        <div class="card-subtitle"><span class="headers">Joined :</span> {{ repo.created_at }} </div>
+                        <div class="description"><span class="headers">Description :</span> {{ repository.description }} </div><br>
+                        <div class="card-subtitle"><span class="headers">Language :</span> {{ repository.language }} </div><br>
+                        <div class="card-subtitle"><span class="headers">Joined :</span> {{ repository.created_at }} </div>
                     </div>
                 </div>
                 <div class="card-footer">

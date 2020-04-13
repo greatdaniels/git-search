@@ -44,7 +44,7 @@ export class ServiceService {
     })
   }
 
-  getRepos(search) {
+  getRepos(search: string) {
     interface Repos {
       name: string;
       description: string;

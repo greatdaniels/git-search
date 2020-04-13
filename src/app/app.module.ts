@@ -9,7 +9,6 @@ import { AppComponent } from './app.component';
 import { UserComponent } from './user/user.component';
 import { RepoComponent } from './repo/repo.component';
 import { SearchComponent } from './search/search.component';
-import { from } from 'rxjs';
 
 @NgModule({
   declarations: [

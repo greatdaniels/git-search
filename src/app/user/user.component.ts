@@ -13,7 +13,7 @@ export class UserComponent implements OnInit {
   user: User;
   repo: Repo;
 
-  constructor(public userService: ServiceService, public repoService: ServiceService) { }
+  constructor(public userService: ServiceService, private repoService: ServiceService) { }
 
   search(search) {
     this.userService.getUser(search).then(
