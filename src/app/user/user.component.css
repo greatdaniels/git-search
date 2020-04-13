@@ -1,0 +1,50 @@
+.overlay{
+    background-color: rgba(235,233,233,0.2);
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+img{
+    width: 70%;
+    border-radius: 15px;
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
+
+#info{
+    background-color: rgba(255,255,255,0.8);
+    margin-top: 2%;
+}
+
+#repo{
+    background-color: rgba(255,255,255,0.8);
+    margin-bottom: 2%;
+    border-radius: 4px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.repo-num,.joined{
+    float: right;
+}
+
+#button-link{
+    border-radius: 50px;
+}
+
+.headers{
+    font-weight: bold;
+}
+
+.repositories{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#repositories{
+    color: whitesmoke;
+    margin-bottom: 3%;
+}
